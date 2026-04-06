@@ -104,6 +104,7 @@ const RoomCard = ({ mode }) => {
         setLoading(true);
         setError('');
         try {
+            console.log("works till here in client side")
             const res = await fetch(`${API_URL}/api/room/join-game`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
